@@ -1,0 +1,1 @@
+import{_ as o}from"./plugin-vue_export-helper.21dcd24c.js";import{c as e,o as r}from"./app.5405f88f.js";const s={};function t(n,c){return r(),e("p",null,"https://github.com/trydofor/pro.fessional.wings")}var i=o(s,[["render",t],["__file","003-pro-fessional-wings.html.vue"]]);export{i as default};

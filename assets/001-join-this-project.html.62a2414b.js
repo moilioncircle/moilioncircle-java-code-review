@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{c as t,o}from"./app.5405f88f.js";const r={};function c(n,i){return o(),t("p",null,"https://vuepress-theme-hope.github.io/v2/zh/guide/interface/icon.html#iconfont-%E7%B2%BE%E9%80%89%E5%9B%BE%E6%A0%87")}var h=e(r,[["render",c],["__file","001-join-this-project.html.vue"]]);export{h as default};

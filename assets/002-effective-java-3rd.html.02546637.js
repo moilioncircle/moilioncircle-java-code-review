@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper.21dcd24c.js";import{c as t,o as r}from"./app.5405f88f.js";const c={};function a(i,n){return r(),t("p",null,"https://github.com/clxering/Effective-Java-3rd-edition-Chinese-English-bilingual")}var l=e(c,[["render",a],["__file","002-effective-java-3rd.html.vue"]]);export{l as default};
