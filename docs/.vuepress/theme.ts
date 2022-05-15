@@ -1,39 +1,36 @@
 import { hopeTheme } from 'vuepress-theme-hope';
-import navbar from './navbar';
-import sidebar from './sidebar';
 
 export default hopeTheme({
   hostname: 'https://java-code-review.moilioncircle.com',
-
   author: {
     name: 'trydofor',
     url: 'https://www.trydofor.com',
   },
 
   iconPrefix: 'iconfont icon-',
-
   logo: '/logo.png',
+  repo: 'moilioncircle/moilioncircle.java-code-review',
 
-  repo: 'vuepress-theme-hope/vuepress-theme-hope',
-
-  docsDir: 'demo/src',
-
-  // navbar
-  navbar: navbar,
-
-  // sidebar
-  sidebar: sidebar,
-
-  footer: 'MIT',
-
+  navbar: [
+    '/',
+    { text: '团队规则', icon: 'support', link: '/01-team-rule/' },
+    { text: '自学成才', icon: 'study', link: '/02-self-work/' },
+    { text: '技术债务', icon: 'debug', link: '/03-code-debt/' },
+  ],
+  sidebar: {
+    '/01-team-rule/': 'structure',
+    '/02-self-work/': 'structure',
+    '/03-code-debt/': 'structure',
+    '/': 'structure',
+  },
+  footer: 'MIT licensed and Powered by Vuepress-Theme-Hope',
+  copyright: 'Copyright © 攻城狮朋友圈',
   displayFooter: true,
-
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
-
   blog: {
     description: '提高个人能力，团队水准，工程质量',
     intro: '/about.html',
-    name:'Mr.NotBad',
+    name: 'Mr.NotBad',
     medias: {
       Gitee: 'https://gitee.com/trydofor/moilioncircle.java-code-review',
       GitHub: 'https://github.com/trydofor',

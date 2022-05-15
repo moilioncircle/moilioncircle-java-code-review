@@ -1,11 +1,10 @@
 ---
-index: false
 icon: debug
 category:
-  - Guide
+  - 摘要
 ---
 
-# 技术债务
+# 03.技术债务
 
 内部丑代码
 
