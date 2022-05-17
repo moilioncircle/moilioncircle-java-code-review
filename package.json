@@ -1,7 +1,7 @@
 {
   "name": "vuepress-theme-hope-template",
   "version": "1.0.0",
-  "description": "适用于Java新手和小团队的项目规范及代码审查",
+  "description": "Java新手和小队长都说好的项目规范及代码审查",
   "license": "MIT",
   "scripts": {
     "docs:build": "vuepress build docs",

@@ -4,7 +4,7 @@ import theme from './theme';
 export default defineUserConfig({
   lang: 'zh-CN',
   title: 'Java Code Review',
-  description: '适用于java新手和小团队的项目规范及代码审查',
+  description: 'Java新手和小队长都说好的项目规范及代码审查',
   base: '/',
   head: [
     [

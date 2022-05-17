@@ -5,7 +5,7 @@ icon: home
 title: 首页
 heroImage:
 heroText: No Bad Code, Not Bad Code
-tagline: 适用于Java新手和小团队的项目规范及代码审查
+tagline: Java新手和小队长都说好的项目规范及代码审查
 bgImage: /bg-m87.jpg
 bgImageStyle: 
   background-color : '#654321'

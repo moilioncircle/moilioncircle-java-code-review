@@ -23,8 +23,8 @@ export default hopeTheme({
     '/03-code-debt/': 'structure',
     '/': 'structure',
   },
-  footer: 'MIT licensed and Powered by Vuepress-Theme-Hope',
-  copyright: 'Copyright © 攻城狮朋友圈',
+  footer: 'MIT licensed, Vuepress-Theme-Hope powered',
+  copyright: 'Copyright© 攻城狮朋友圈',
   displayFooter: true,
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
   blog: {
@@ -34,6 +34,7 @@ export default hopeTheme({
     medias: {
       Gitee: 'https://gitee.com/trydofor/moilioncircle.java-code-review',
       GitHub: 'https://github.com/trydofor',
+      Zhihu: "https://www.zhihu.com/column/c_1509821594431655936",
     },
   },
 
