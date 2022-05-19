@@ -1,6 +1,6 @@
-import { hopeTheme } from 'vuepress-theme-hope';
+import { HopeThemeOptions } from 'vuepress-theme-hope';
 
-export default hopeTheme({
+export const themeOption = {
   hostname: 'https://java-code-review.moilioncircle.com',
   author: {
     name: 'trydofor',
@@ -10,12 +10,12 @@ export default hopeTheme({
   iconPrefix: 'iconfont icon-',
   logo: '/logo.png',
   repo: 'moilioncircle/moilioncircle.java-code-review',
-
+  docsDir: 'docs',
   navbar: [
     '/',
+    { text: '技术债务', icon: 'debug', link: '/03-code-debt/' },
     { text: '团队规则', icon: 'support', link: '/01-team-rule/' },
     { text: '自学成才', icon: 'study', link: '/02-self-work/' },
-    { text: '技术债务', icon: 'debug', link: '/03-code-debt/' },
   ],
   sidebar: {
     '/01-team-rule/': 'structure',
@@ -28,12 +28,12 @@ export default hopeTheme({
   displayFooter: true,
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
   blog: {
-    description: '提高个人能力，团队水准，工程质量',
+    description: '提升个人能力，团队水准，工程质量',
     intro: '/about.html',
     name: 'Mr.NotBad',
     medias: {
+      GitHub: 'https://github.com/moilioncircle/moilioncircle.java-code-review',
       Gitee: 'https://gitee.com/trydofor/moilioncircle.java-code-review',
-      GitHub: 'https://github.com/trydofor',
       Zhihu: "https://www.zhihu.com/column/c_1509821594431655936",
     },
   },
@@ -51,10 +51,10 @@ export default hopeTheme({
        * Using giscus
        */
       type: 'giscus',
-      repo: 'vuepress-theme-hope/giscus-discussions',
-      repoId: 'R_kgDOG_Pt2A',
+      repo: 'moilioncircle/moilioncircle.java-code-review',
+      repoId: 'R_kgDOHVWlGQ',
       category: 'Announcements',
-      categoryId: 'DIC_kwDOG_Pt2M4COD69',
+      categoryId: 'DIC_kwDOHVWlGc4CPK4C',
 
       /**
        * Using twikoo
@@ -76,4 +76,4 @@ export default hopeTheme({
       },
     },
   },
-});
+} as HopeThemeOptions;

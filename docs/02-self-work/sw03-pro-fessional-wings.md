@@ -1,4 +1,5 @@
 ---
+isOriginal: true
 icon: study
 category:
   - 自学
@@ -6,7 +7,8 @@ tag:
   - 规则
   - 项目
 ---
-# sw03.专业大翅项目
+
+# SW03.专业大翅项目
 
 * 静态优于动态，能编码的就不反射。
 * 强类型优于弱类型，能class就不map，能enum就不const

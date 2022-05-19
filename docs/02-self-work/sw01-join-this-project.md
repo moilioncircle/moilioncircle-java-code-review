@@ -1,4 +1,5 @@
 ---
+isOriginal: true
 icon: study
 category:
   - 自学
@@ -8,13 +9,13 @@ tag:
   - 协作
 ---
 
-# sw01.如何参与JavaCodeReview
+# SW01.如何参与JavaCodeReview
 
 在我看来，有幸看到此项目，就是你我莫大的缘分了，在看代码笑话，让身边人别犯蠢即算参与了。
-互动的话，提交Issue或PR到Gitee上（注意不是Github），因此项目优先考虑国内玩家的速度和面子问题。
+互动的话，提交Issue或PR到Github上，因此项目优先考虑国内玩家的速度和面子问题。
 若以上还不能满足，那么需要你有一定的动手能力和情绪控制能力，因为后面全是自助式的，没有保姆。
 
-## sw01a.目录和文件的命名规则
+## SW01A.目录和文件的命名
 
 考虑到OS差异，Url和File的兼容性，简化为以下要点，
 
@@ -22,8 +23,8 @@ tag:
 * 目录和文件，`烤串`命名法。统一小写以`-`分隔单词。
 * 目录，有2位序号和2个单词构成，`##-xxx-yyy`
 * 文件，有目录，序号，目录命名约定构成，
-  - team-rule和self-work的约定为实意单词。
-  - code-debt约定为项目代号+日期+时间。
+  + team-rule和self-work的约定为实意单词。
+  + code-debt约定为项目代号+日期+时间。
 * 序号，统一领取，默认10进制。
 * 文章，主标题为文件序号，章节则追加`a.`，即字母为序。
 * 标点，一个中文中用中文，英文中用英文。
@@ -37,12 +38,44 @@ tag:
 * `04-09`，目前没有明确规划，属于保留序号。
 * `10-99`，规划为公开项目的Review，包括低质量的重构和高质量的学习。
 
-## sw01b.工程的结构和技术
+## SW01B.工程的结构和技术
 
 整个工程使用的是`vuepress`技术和官方的`hope`主题，以下官方文档有详解。
 
-* https://v2.vuepress.vuejs.org/zh/
-* https://vuepress-theme-hope.github.io/v2/
+* <https://v2.vuepress.vuejs.org/zh/>
+* <https://vuepress-theme-hope.github.io/v2/>
 
-首先fork本repo，成为自己的gitee项目，然后clone到本地，重点关注docs目录。
+首先`fork`本repo成为自己的git项目，然后`clone`到本地，重点关注docs目录。
 可以手工生成对应目录的文件，也可以使用idea体系下的`Any2dto`插件复制review。
+
+目前VuePress2和theme-hope2都是beta版，需要注意版本的兼容性。
+
+## SW01C.编写Markdown文章
+
+### 标题，8-10中文长。
+
+格式为`编号`+`序号`+`小节`+`.`+`内容`，其中以`.`分隔。
+
+* 编号 - 2位大写字母，顶级文章可无编号
+* 序号 - 数字序号，2-4位
+* 小节 - 1位字母，大写从A-Z
+
+### 配置，做好分类和标签
+
+以`Frontmatter`标记，主要设置以下几个。
+
+* author:trydofor - 作者，默认trydofor
+* isOriginal:true - 是否原创，默认false
+* icon:java - 图标，使用iconfont，无默认值。
+* category - 分类，中文，一般为所属目录，推荐一个，可多个。
+* tag - 标签，中文，多个文章关键词。
+
+### 正文，合适的文本模式可读性
+
+可以使用`VsCode`编辑，使用`markdownlint`格式化。
+
+* 标点，中文中使用中文标点，英文中使用英文。
+* 换行，推荐手动断行，保持markdown的文本形态可读性。
+* 空白，中文与英数间可不增加空格（prettier会强制增加）
+* 链接，工程内引用，使用显示的相对路径`./`，`/`为publish资源
+* 列表，无序列表，层级关系一级`*`，二级`+`，三级`-`

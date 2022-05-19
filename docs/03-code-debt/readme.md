@@ -1,4 +1,5 @@
 ---
+isOriginal: true
 icon: debug
 category:
   - 摘要

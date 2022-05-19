@@ -1,4 +1,5 @@
 ---
+isOriginal: true
 icon: study
 category:
   - 摘要
