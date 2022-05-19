@@ -1,0 +1,1 @@
+import{_ as o}from"./plugin-vue_export-helper.21dcd24c.js";import{r as t,o as r,H as a}from"./app.88a47b6e.js";const n={};function c(_,s){const e=t("Badge");return r(),a(e,{text:"\u53EF\u9009",type:"note"})}var m=o(n,[["render",c],["__file","May.vue"]]);export{m as default};
