@@ -1,1 +1,0 @@
-import{_ as o}from"./plugin-vue_export-helper.21dcd24c.js";import{r as t,o as r,H as c}from"./app.88a47b6e.js";const n={};function _(a,s){const e=t("Badge");return r(),c(e,{text:"\u63A8\u8350",type:"tip"})}var d=o(n,[["render",_],["__file","Should.vue"]]);export{d as default};
