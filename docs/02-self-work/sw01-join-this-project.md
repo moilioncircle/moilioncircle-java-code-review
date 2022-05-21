@@ -42,8 +42,8 @@ tag:
 
 整个工程使用的是`vuepress`技术和官方的`hope`主题，以下官方文档有详解。
 
-* <https://v2.vuepress.vuejs.org/zh/>
-* <https://vuepress-theme-hope.github.io/v2/>
+* [https://v2.vuepress.vuejs.org/zh/]
+* [https://vuepress-theme-hope.github.io/v2/]
 
 首先`fork`本repo成为自己的git项目，然后`clone`到本地，重点关注docs目录。
 可以手工生成对应目录的文件，也可以使用idea体系下的`Any2dto`插件复制review。
@@ -53,6 +53,9 @@ tag:
 对vuepress的开发，简单遵循prettier的格式化就好。
 
 ## SW01C.编写Markdown文章
+
+因vuepress对markdown有很多增强，且解析为vue模板。
+所以需要遵守约定，并避免在代码块外误用无法识别的闭合tag。
 
 ### 标题，8-10中文长
 
@@ -79,7 +82,8 @@ tag:
 * 标点，中文中使用中文标点，英文中使用英文。
 * 换行，推荐手动断行，保持markdown的文本形态可读性。
 * 空白，中文与英数间可不增加空格（prettier会强制增加）
-* 链接，工程内引用，使用显示的相对路径`./`，`/`为publish资源
+* 内链接，工程内引用，使用显示的相对路径`./`，`/`为publish资源
+* 裸链接，使用`[http://]`，因为`</>`会被Vue解析并引发错误
 * 列表，无序列表，层级关系一级`*`，二级`+`，三级`-`
 
 ### 增强，上标增强或图标组件

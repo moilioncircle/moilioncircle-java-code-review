@@ -1,7 +1,6 @@
 ---
 isOriginal: true
 icon: debug
-index: 0
 category:
   - 摘要
 ---

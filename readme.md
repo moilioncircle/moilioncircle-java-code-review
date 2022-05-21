@@ -28,5 +28,5 @@
 若希望参与本项目，简单的提交Issue或PR到Github即可，深度参与参考[如何参与JavaCodeReview](./docs/02-self-work/sw01-join-this-project.md)。
 本项目主要使用了以下技术，特别感谢！
 
-* <https://v2.vuepress.vuejs.org/zh/>
-* <https://vuepress-theme-hope.github.io/v2/>
+* [https://v2.vuepress.vuejs.org/zh/]
+* [https://vuepress-theme-hope.github.io/v2/]
