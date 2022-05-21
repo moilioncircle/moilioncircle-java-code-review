@@ -1,6 +1,6 @@
 ---
 isOriginal: true
-icon: study
+icon: git
 category:
   - 自学
 tag:

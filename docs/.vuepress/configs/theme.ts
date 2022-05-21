@@ -34,7 +34,7 @@ export const themeOption = {
     medias: {
       GitHub: 'https://github.com/moilioncircle/moilioncircle.java-code-review',
       Gitee: 'https://gitee.com/trydofor/moilioncircle.java-code-review',
-      Zhihu: "https://www.zhihu.com/column/c_1509821594431655936",
+      Zhihu: 'https://www.zhihu.com/column/c_1509821594431655936',
     },
   },
 
@@ -43,30 +43,12 @@ export const themeOption = {
       autoExcerpt: true,
     },
 
-    // If you don't need comment feature, you can remove following option
-    // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
-    // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
     comment: {
-      /**
-       * Using giscus
-       */
       type: 'giscus',
       repo: 'moilioncircle/moilioncircle.java-code-review',
       repoId: 'R_kgDOHVWlGQ',
       category: 'Announcements',
       categoryId: 'DIC_kwDOHVWlGc4CPK4C',
-
-      /**
-       * Using twikoo
-       */
-      // type: "twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
-
-      /**
-       * Using Waline
-       */
-      // type: "waline",
-      // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
     },
 
     mdEnhance: {

@@ -1,13 +1,13 @@
 ---
 isOriginal: true
-icon: study
+icon: selection
 category:
   - 自学
 tag:
   - 规则
   - 好书
 ---
-# SW02.《Effective-Java》第三版
+# SW02.EffectiveJava
 
 此书非常薄，实操性非常强，是我多年来首推的工具书，在不同的能力水平，会看到不同的理解和收益。
 
