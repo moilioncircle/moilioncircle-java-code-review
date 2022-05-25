@@ -25,8 +25,8 @@
 `不错先生`本名叫`史麦乐`，是个地道的中国东北程序员，Java代码写了有20年，150万行之多。
 不用惊诧于那坨🚫💩的组合头像，那是自己PS的，他不但丧失了审美，还迷信自然数`654321`。
 
-若希望参与本项目，简单的提交Issue或PR到Github即可，深度参与参考[如何参与JavaCodeReview](./docs/02-self-work/sw01-join-this-project.md)。
+若希望参与本项目，简单的提交Issue或PR到Github即可，深度参与参考[如何参与此项目](./docs/02-self-work/sw01-join-this-project.md)。
 本项目主要使用了以下技术，特别感谢！
 
-* [https://v2.vuepress.vuejs.org/zh/]
-* [https://vuepress-theme-hope.github.io/v2/]
+* <https://v2.vuepress.vuejs.org/zh>
+* <https://vuepress-theme-hope.github.io/v2>

@@ -1,6 +1,11 @@
 import { HopeThemeOptions } from 'vuepress-theme-hope';
+import { navbar } from './navbar';
+import { sidebar } from './sidebar';
 
-export const themeOption = {
+export const themeOption: HopeThemeOptions = {
+  navbar,
+  sidebar,
+
   hostname: 'https://java-code-review.moilioncircle.com',
   author: {
     name: 'trydofor',
@@ -11,18 +16,6 @@ export const themeOption = {
   logo: '/logo.png',
   repo: 'moilioncircle/moilioncircle.java-code-review',
   docsDir: 'docs',
-  navbar: [
-    '/',
-    { text: '技术债务', icon: 'debug', link: '/03-code-debt/' },
-    { text: '团队规则', icon: 'support', link: '/01-team-rule/' },
-    { text: '自学成才', icon: 'study', link: '/02-self-work/' },
-  ],
-  sidebar: {
-    '/01-team-rule/': 'structure',
-    '/02-self-work/': 'structure',
-    '/03-code-debt/': 'structure',
-    '/': 'structure',
-  },
   footer: 'MIT licensed, Vuepress-Theme-Hope powered',
   copyright: 'Copyright© 攻城狮朋友圈',
   displayFooter: true,
@@ -58,4 +51,4 @@ export const themeOption = {
       },
     },
   },
-} as HopeThemeOptions;
+};
