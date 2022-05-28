@@ -24,15 +24,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: npm
+          cache: pnpm
 
       - name: Install Deps
-        run: npm install
+        run: pnpm install
 
       - name: Build Docs
         env:
           NODE_OPTIONS: --max_old_space_size=4096
-        run: npm run docs:build
+        run: pnpm run docs:build
 
       - name: Deploy Docs
         uses: JamesIves/github-pages-deploy-action@v4
