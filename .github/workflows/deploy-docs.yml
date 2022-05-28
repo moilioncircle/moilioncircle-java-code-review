@@ -18,7 +18,10 @@ jobs:
           # if your docs needs submodules, uncomment the following line
           # submodules: true
 
-
+      - name: install pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 7.0.0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
