@@ -1,6 +1,27 @@
-import { HopeThemeOptions } from 'vuepress-theme-hope';
+import type { HopeThemeOptions } from 'vuepress-theme-hope';
 import { navbar } from './navbar';
 import { sidebar } from './sidebar';
+
+function stylizeIt(key: string | RegExp, txt: string, type: string, ...tags: string[]) {
+  return {
+    matcher: key,
+    replacer: ({ tag, content }) => {
+      if (tags.includes(tag)) {
+        let vertical = 'middle';
+        if (tag === 'sup') {
+          vertical = 'top';
+        } else if (tag === 'sub') {
+          vertical = 'bottom';
+        }
+        return {
+          tag: 'Badge',
+          attrs: { type, vertical },
+          content: txt ? txt : content,
+        };
+      }
+    },
+  };
+}
 
 export const themeOption: HopeThemeOptions = {
   navbar,
@@ -49,6 +70,16 @@ export const themeOption: HopeThemeOptions = {
       presentation: {
         plugins: ['highlight', 'math', 'search', 'notes', 'zoom'],
       },
+      stylize: [
+        stylizeIt(/^(?:MUST|必须)$/u, '', 'info', 'strong', 'sup'),
+        stylizeIt(/^(?:SHOULD|推荐)$/u, '', 'tip', 'strong', 'sup'),
+        stylizeIt(/^(?:MAY|可选)$/u, '', 'note', 'strong', 'sup'),
+        stylizeIt(/^(?:NOT|慎用)$/u, '', 'warning', 'strong', 'sup'),
+        stylizeIt('猿初', '🙈猿初', 'note', 'sup'),
+        stylizeIt('猿中', '🙉猿中', 'note', 'sup'),
+        stylizeIt('猿高', '🙊猿高', 'note', 'sup'),
+        stylizeIt('狮初', '🦁狮初', 'tip', 'sup'),
+      ],
     },
   },
 };

@@ -1,6 +1,7 @@
 {
-  "name": "vuepress-theme-hope-template",
+  "name": "notbad-java-code-review",
   "version": "1.0.0",
+  "private": true,
   "description": "Java新手和小队长都说好的项目规范及代码审查",
   "license": "MIT",
   "scripts": {
@@ -9,12 +10,27 @@
     "docs:dev": "vuepress dev docs"
   },
   "devDependencies": {
-    "@vuepress/client": "^2.0.0-beta.45",
-    "@vuepress/plugin-docsearch": "^2.0.0-beta.45",
-    "@vuepress/plugin-register-components": "^2.0.0-beta.45",
-    "prettier": "~2.6.0",
-    "vue": "^3.2.33",
-    "vuepress": "^2.0.0-beta.45",
-    "vuepress-theme-hope": "^2.0.0-beta.71"
+    "@vuepress/client": "^2.0.0-beta.46",
+    "@vuepress/plugin-search": "^2.0.0-beta.46",
+    "@vuepress/plugin-docsearch": "^2.0.0-beta.46",
+    "@vuepress/plugin-register-components": "^2.0.0-beta.46",
+    "vuepress": "^2.0.0-beta.46",
+    "vuepress-theme-hope": "^2.0.0-beta.72",
+    "prettier": "*",
+    "vue": "*"
+  },
+  "packageManager": "pnpm@7",
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@types/react",
+        "react",
+        "react-dom"
+      ]
+    }
   }
 }

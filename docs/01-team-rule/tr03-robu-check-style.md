@@ -4,6 +4,7 @@ icon: plugin
 category:
   - 规则
   - 健壮
+  - 分析
 ---
 
 # TR03.静态分析和动态分析

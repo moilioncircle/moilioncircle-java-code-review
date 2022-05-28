@@ -7,7 +7,7 @@ heroImage:
 heroText: No Bad Code, Not Bad Code
 tagline: Java新手和小队长都说好的项目规范及代码审查
 bgImage: /bg-m87.jpg
-bgImageStyle: 
+bgImageStyle:
   background-color : '#654321'
 heroFullScreen: false
 projects:

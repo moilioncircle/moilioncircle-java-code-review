@@ -19,4 +19,4 @@ tag:
 * 防御性编程风格，默认输入数据不可信，必须验证。
 
 
-https://github.com/trydofor/pro.fessional.wings
+<https://github.com/trydofor/pro.fessional.wings>
