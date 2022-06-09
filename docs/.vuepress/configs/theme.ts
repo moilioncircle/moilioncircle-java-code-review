@@ -32,7 +32,12 @@ export const themeOption: HopeThemeOptions = {
     name: 'trydofor',
     url: 'https://www.trydofor.com',
   },
-
+  themeColor: {
+    blue: '#2196f3',
+    red: '#f26d6d',
+    green: '#3eaf7c',
+    orange: '#fb9b5f',
+  },
   iconPrefix: 'iconfont icon-',
   logo: '/logo.png',
   repo: 'moilioncircle/moilioncircle.java-code-review',
@@ -58,7 +63,7 @@ export const themeOption: HopeThemeOptions = {
     },
 
     comment: {
-      type: 'giscus',
+      provider: 'Giscus',
       repo: 'moilioncircle/moilioncircle.java-code-review',
       repoId: 'R_kgDOHVWlGQ',
       category: 'Announcements',

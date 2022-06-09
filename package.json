@@ -15,11 +15,11 @@
     "@vuepress/plugin-docsearch": "^2.0.0-beta.46",
     "@vuepress/plugin-register-components": "^2.0.0-beta.46",
     "vuepress": "^2.0.0-beta.46",
-    "vuepress-theme-hope": "^2.0.0-beta.72",
+    "vuepress-theme-hope": "^2.0.0-beta.79",
     "prettier": "*",
     "vue": "*"
   },
-  "packageManager": "pnpm@7",
+  "packageManager": "pnpm@7.1.9",
   "engines": {
     "node": ">=16",
     "pnpm": ">=7"
