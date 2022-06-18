@@ -1,5 +1,5 @@
 import { defineUserConfig } from 'vuepress';
-import { searchPlugin } from '@vuepress/plugin-search';
+import { docsearchPlugin } from '@vuepress/plugin-docsearch';
 import { hopeTheme } from 'vuepress-theme-hope';
 import { themeOption } from './configs/theme';
 
@@ -19,11 +19,10 @@ export default defineUserConfig({
     ],
   ],
   plugins: [
-    // docsearchPlugin({
-    //   appId: '34YFD9IUQ2',
-    //   apiKey: '9a9058b8655746634e01071411c366b8',
-    //   indexName: 'vuepress',
-    // }),
-    searchPlugin(),
+    docsearchPlugin({
+      appId: '8YBPIAAF53',
+      apiKey: '115c7d17dacbf60d985d6389e9eff675',
+      indexName: 'java-code-review-moilioncircle',
+    }),
   ],
 });

@@ -103,3 +103,28 @@ tag:
 * 执行级别 - `^必须^` ^必须^，`^推荐^`^推荐^，`^可选^`^可选^，`^慎用^`^慎用^
 * 能力水准 - `^猿初^`^猿初^，`^猿中^`^猿中^，`^猿高^`^猿高^，`^狮初^`^狮初^
 * 图标 - 增加文本乐趣 `<FontIcon icon="preview"/>` <FontIcon icon="preview"/>
+
+## 01D.开发者的常见问题
+
+此项目采用pnpm做包管理，因此不会显示的传递依赖。基本上，需要保证以下核心依赖的版本一致。
+该死的json不支持注释，并且npm体系，还不打算支持json5等支持注释的配置格式。
+
+* vuepress - 核心科技
+* vuepress-theme-hope - 主题核心，与前者一致。
+* vue - 必须保持唯一版本，建议和hope一致。
+* vue-router - 同上。
+
+碰到问题时，如果不是因为自定义功能引起的，可以，
+
+* 首先查看[常见错误](https://vuepress-theme-hope.github.io/v2/zh/faq/)
+* 到github上，搜索Issue
+
+### D01.dev正常但build失败
+
+清一下缓存试试：`rm -rf docs/.vuepress/{.cache/,.temp/}`
+
+### D02.useXXX() without provider
+
+> useXXX() is called without provider
+
+保证 vuepress，theme-hope，vue和vue-router的版本**一致且唯一**。
