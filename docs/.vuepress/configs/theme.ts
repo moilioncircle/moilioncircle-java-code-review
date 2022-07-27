@@ -38,7 +38,7 @@ export const themeOption: HopeThemeOptions = {
     green: '#3eaf7c',
     orange: '#fb9b5f',
   },
-  iconPrefix: 'iconfont icon-',
+  iconAssets: "iconfont",
   logo: '/logo.png',
   repo: 'moilioncircle/moilioncircle.java-code-review',
   docsDir: 'docs',
@@ -46,6 +46,7 @@ export const themeOption: HopeThemeOptions = {
   copyright: 'Copyright© 攻城狮朋友圈',
   displayFooter: true,
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
+
   blog: {
     description: '提升个人能力，团队水准，工程质量',
     intro: '/about.html',
@@ -71,10 +72,19 @@ export const themeOption: HopeThemeOptions = {
     },
 
     mdEnhance: {
-      enableAll: true,
-      presentation: {
-        plugins: ['highlight', 'math', 'search', 'notes', 'zoom'],
-      },
+      gfm: true,
+      container: true,
+      linkCheck: true,
+      vpre: true,
+      tabs: true,
+      codetabs: true,
+      align: true,
+      sup: true,
+      sub: true,
+      footnote: true,
+      mark: true,
+      imageMark: true,
+      tasklist: true,
       stylize: [
         stylizeIt(/^(?:MUST|必须)$/u, '', 'info', 'strong', 'sup'),
         stylizeIt(/^(?:SHOULD|推荐)$/u, '', 'tip', 'strong', 'sup'),

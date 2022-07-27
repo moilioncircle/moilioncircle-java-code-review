@@ -7,7 +7,7 @@ tag:
   - 规则
   - 好书
 ---
-# SW02.EffectiveJava
+# B02.高效Effective Java
 
 此书非常薄，实操性非常强，是我多年来首推的工具书，在不同的能力水平，会看到不同的理解和收益。
 
@@ -17,7 +17,7 @@ tag:
 英文阅读能力，是程序猿进阶的必备技能。就当前而言，先进的技术和社区都是英文的，只有具有英文能力，
 才能够保持不掉队，并且对代码的命名也有莫大的好处。
 
-## SW02A.规则列表
+## B02A.规则列表
 
 <!-- markdownlint-disable MD013 -->
 ### Chapter02. 创建和销毁对象  [Creating and Destroying Objects](https://github.com/clxering/Effective-Java-3rd-edition-Chinese-English-bilingual/blob/dev/Chapter-2/Chapter-2-Introduction.md)
