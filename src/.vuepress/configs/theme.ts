@@ -2,6 +2,11 @@ import { hopeTheme } from 'vuepress-theme-hope';
 import { navbar } from './navbar';
 import { sidebar } from './sidebar';
 
+import { execa } from 'execa';
+
+// 2022-10-22 e660ee1a6acf4f32a1d7ec7bbe548bba6b3fe051
+const { stdout } = await execa('git', ['--no-pager', 'log', '-1', '--format=%as %H'], { stdin: 'inherit' });
+
 function stylizeIt(key: string | RegExp, txt: string, type: string, ...tags: string[]) {
   return {
     matcher: key,
@@ -37,7 +42,10 @@ export default hopeTheme({
   logo: '/logo.png',
   repo: 'moilioncircle/moilioncircle.java-code-review',
   docsDir: 'docs',
-  footer: 'MIT licensed, Vuepress-Theme-Hope powered',
+  footer:
+  '<a href="https://mit-license.org" target="_blank">MIT</a> licensed, ' +
+  '<a href="https://theme-hope.vuejs.press" target="_blank">Mr.Hope</a> powered, ' +
+  '<a href="https://github.com/moilioncircle/moilioncircle.java-code-review/commits/' +stdout.substring(11)+ '" target="_blank"> '+stdout.substring(0,21)+' </a> built',
   copyright: 'Copyright© 攻城狮朋友圈',
   displayFooter: true,
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
