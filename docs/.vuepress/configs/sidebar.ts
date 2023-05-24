@@ -1,6 +1,6 @@
-import { HopeThemeSidebarConfig } from 'vuepress-theme-hope';
+import { SidebarOptions } from 'vuepress-theme-hope';
 
-export const sidebar: HopeThemeSidebarConfig = {
+export const sidebar: SidebarOptions = {
   '/a-team-rule/': 'structure',
   '/b-self-work/': 'structure',
   '/c-code-debt/': 'structure',

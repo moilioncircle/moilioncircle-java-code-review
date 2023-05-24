@@ -34,6 +34,7 @@ WingsBoot是SpringBoot的脚手架 <https://wings.fessional.pro>
 * 枚举类/常量 - 推荐大驼峰法，不推荐全大写
 * 序列化前缀 - 不可单字母，boolean避免`is`前缀
 * 常量为复数 - consts/constants
+* 一行短if - 一行短if一般用作短路处理
 
 此外，阿里风格也并非能够全部应用或适用，量力而行，实事求是。
 

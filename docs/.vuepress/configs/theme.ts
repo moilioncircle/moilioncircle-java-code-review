@@ -1,4 +1,4 @@
-import type { HopeThemeOptions } from 'vuepress-theme-hope';
+import { hopeTheme } from 'vuepress-theme-hope';
 import { navbar } from './navbar';
 import { sidebar } from './sidebar';
 
@@ -23,7 +23,7 @@ function stylizeIt(key: string | RegExp, txt: string, type: string, ...tags: str
   };
 }
 
-export const themeOption: HopeThemeOptions = {
+export default hopeTheme({
   navbar,
   sidebar,
 
@@ -32,12 +32,7 @@ export const themeOption: HopeThemeOptions = {
     name: 'trydofor',
     url: 'https://www.trydofor.com',
   },
-  themeColor: {
-    blue: '#2196f3',
-    red: '#f26d6d',
-    green: '#3eaf7c',
-    orange: '#fb9b5f',
-  },
+  themeColor: true,
   iconAssets: "iconfont",
   logo: '/logo.png',
   repo: 'moilioncircle/moilioncircle.java-code-review',
@@ -59,9 +54,7 @@ export const themeOption: HopeThemeOptions = {
   },
 
   plugins: {
-    blog: {
-      autoExcerpt: true,
-    },
+    blog: true,
 
     comment: {
       provider: 'Giscus',
@@ -74,8 +67,7 @@ export const themeOption: HopeThemeOptions = {
     mdEnhance: {
       gfm: true,
       container: true,
-      linkCheck: true,
-      vpre: true,
+      vPre: true,
       tabs: true,
       codetabs: true,
       align: true,
@@ -83,13 +75,13 @@ export const themeOption: HopeThemeOptions = {
       sub: true,
       footnote: true,
       mark: true,
-      imageMark: true,
+      imgMark: true,
       tasklist: true,
       stylize: [
         stylizeIt(/^(?:MUST|必须)$/u, '', 'info', 'strong', 'sup'),
-        stylizeIt(/^(?:SHOULD|推荐)$/u, '', 'tip', 'strong', 'sup'),
-        stylizeIt(/^(?:MAY|可选)$/u, '', 'note', 'strong', 'sup'),
-        stylizeIt(/^(?:NOT|慎用)$/u, '', 'warning', 'strong', 'sup'),
+        stylizeIt(/^(?:SHOULD|RECOMMENDED|TIP|推荐|建议)$/u, '', 'tip', 'strong', 'sup'),
+        stylizeIt(/^(?:MAY|NOTE|可选|不推荐|不建议)$/u, '', 'note', 'strong', 'sup'),
+        stylizeIt(/^(?:NOT|WARN|慎用)$/u, '', 'warning', 'strong', 'sup'),
         stylizeIt('猿初', '🙈猿初', 'note', 'sup'),
         stylizeIt('猿中', '🙉猿中', 'note', 'sup'),
         stylizeIt('猿高', '🙊猿高', 'note', 'sup'),
@@ -97,4 +89,4 @@ export const themeOption: HopeThemeOptions = {
       ],
     },
   },
-};
+});
