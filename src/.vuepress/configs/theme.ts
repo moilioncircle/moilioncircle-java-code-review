@@ -73,7 +73,6 @@ export default hopeTheme({
     },
 
     mdEnhance: {
-      gfm: true,
       container: true,
       vPre: true,
       tabs: true,
