@@ -40,12 +40,12 @@ export default hopeTheme({
   themeColor: true,
   iconAssets: "iconfont",
   logo: '/logo.png',
-  repo: 'moilioncircle/moilioncircle.java-code-review',
+  repo: 'moilioncircle/moilioncircle-java-code-review',
   docsDir: 'docs',
   footer:
   '<a href="https://mit-license.org" target="_blank">MIT</a> licensed, ' +
   '<a href="https://theme-hope.vuejs.press" target="_blank">Mr.Hope</a> powered, ' +
-  '<a href="https://github.com/moilioncircle/moilioncircle.java-code-review/commits/' +stdout.substring(11)+ '" target="_blank"> '+stdout.substring(0,21)+' </a> built',
+  '<a href="https://github.com/moilioncircle/moilioncircle-java-code-review/commits/' +stdout.substring(11)+ '" target="_blank"> '+stdout.substring(0,21)+' </a> built',
   copyright: 'Copyright© 攻城狮朋友圈',
   displayFooter: true,
   pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
@@ -55,8 +55,8 @@ export default hopeTheme({
     intro: '/about.html',
     name: 'Mr.NotBad',
     medias: {
-      GitHub: 'https://github.com/moilioncircle/moilioncircle.java-code-review',
-      Gitee: 'https://gitee.com/trydofor/moilioncircle.java-code-review',
+      GitHub: 'https://github.com/moilioncircle/moilioncircle-java-code-review',
+      Gitee: 'https://gitee.com/trydofor/moilioncircle-java-code-review',
       Zhihu: 'https://www.zhihu.com/column/c_1509821594431655936',
     },
   },
@@ -66,14 +66,14 @@ export default hopeTheme({
 
     comment: {
       provider: 'Giscus',
-      repo: 'moilioncircle/moilioncircle.java-code-review',
+      repo: 'moilioncircle/moilioncircle-java-code-review',
       repoId: 'R_kgDOHVWlGQ',
       category: 'Announcements',
       categoryId: 'DIC_kwDOHVWlGc4CPK4C',
     },
 
     mdEnhance: {
-      container: true,
+      hint: true,
       vPre: true,
       tabs: true,
       codetabs: true,
